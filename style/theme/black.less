@@ -1,0 +1,126 @@
+.app-container.black {
+  background-color: @black-container-bg;
+  .app-container__header__logo {
+    background-color: @black-logo-bg;
+  }
+  .app-container__header__nav {
+    color: @black-minor-color;
+    background-color: @black-header-bg;
+    border-bottom: none;
+    a {
+      color: @black-minor-color;
+    }
+    a:link {
+      color: @black-minor-color;
+    }
+    a:visited {
+      color: @black-minor-color;
+    }
+    a:hover {
+      color: @black-minor-color;
+    }
+    a:active {
+      color: @black-minor-color;
+    }
+
+    .header-nav__bar {
+      input {
+        color: @black-minor-color;
+        background: transparent;
+        border-bottom-color: @black-minor-color;
+      }
+    }
+  }
+  .app-container__side {
+    background-color: @black-side-bg;
+    &__menu {
+      color: @black-menu-color;
+      border-right: 1px solid @black-border;
+    }
+  }
+  .app-container__main {
+    &__crumbs {
+      background-color: @black-crumbs-bg;
+      border-bottom-color: @black-crumbs-border;
+    }
+  }
+  .app-section {
+    background-color: @black-bg;
+    border-color: @black-border;
+  }
+  .app-bg {
+    background-color: @black-container-bg;
+  }
+  .app-normal-bg {
+    background-color: @black-bg;
+  }
+  .app-primary-bg {
+    background-color: @black-primary-bg;
+  }
+  .app-minor-bg {
+    color: @black-minor-color;
+    background-color: @black-minor-bg;
+  }
+  .app-minor-light-bg {
+    background-color: @black-minor-light-bg;
+  }
+  .app-border {
+    border-color: @black-border;
+  }
+  ~ .app-border {
+    border-color: @black-border;
+  }
+  .app-border--bottom {
+    border-color: @black-border;
+  }
+  .app-table {
+    th {
+      background-color: @black-table-th;
+    }
+  }
+
+  a {
+    color: @black-primary-bg;
+  }
+  a:link {
+    color: @black-primary-bg;
+  }
+  a:visited {
+    color: @black-primary-bg;
+  }
+  a:hover {
+    color: @black-primary-bg;
+    cursor: pointer;
+  }
+  a:active {
+    color: @black-primary-bg;
+  }
+
+  // 覆盖ELement样式
+  .el-menu-item.is-active {
+    background-color: @black-minor-bg;
+    color: @white;
+    border-left: 4px solid @black-color-primary;
+  }
+  .el-card.is-always-shadow {
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  // 颜色
+  .app-color--primary {
+    color: @black-color-primary;
+  }
+  .app-color--success {
+    color: @black-color-success;
+  }
+  .app-color--warning {
+    color: @black-color-warning;
+  }
+  .app-color--danger {
+    color: @black-color-danger;
+  }
+  .app-color--info {
+    color: @black-color-info;
+  }
+}

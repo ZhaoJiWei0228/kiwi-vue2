@@ -1,0 +1,71 @@
+// 布局样式
+.app-container {
+  height: 100%;
+  padding-top: @header-height;
+  position: relative;
+  // 头部
+  &__header {
+    height: @header-height;
+    margin-top: -@header-height;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    // logo
+    &__logo {
+      height: 100%;
+      width: @side-width;
+    }
+    // 导航
+    &__nav {
+      height: 100%;
+      flex: 1;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      padding: 0 @base-padding;
+    }
+  }
+  // 侧边栏
+  &__side {
+    height: 100%;
+    width: @side-width;
+    float: left;
+    overflow: hidden;
+    // 菜单区
+    &__menu {
+      height: 100%;
+    }
+  }
+  // 主视图内容
+  &__main {
+    height: 100%;
+    padding-top: @crumbs-height;
+    position: relative;
+    overflow: hidden;
+    // 面包屑
+    &__crumbs {
+      height: @crumbs-height;
+      width: 100%;
+      line-height: @crumbs-height;
+      padding: 0 @base-padding;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      position: absolute;
+      top: 0;
+    }
+    // 内容区
+    &__content {
+      height: 100%;
+      padding: @base-padding;
+      padding-bottom: 60px;
+      overflow: auto;
+    }
+  }
+}
+
+// 全屏模式
+.app-container.min {
+  .app-container__side {
+    width: @nav-min;
+  }
+}

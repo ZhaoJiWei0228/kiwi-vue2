@@ -1,0 +1,14 @@
+name: ConSec-static
+mergeQueueEnabled: false
+stages: 
+    - name: compile
+      trigger: manual
+      jobs: 
+        - name: compile-release-lib
+          tasks: 
+            - name: npm-release-lib
+              type: oe-release-lib
+              params: 
+                buildTool: NPM
+                osType: centos7.2
+                language: JAVASCRIPT

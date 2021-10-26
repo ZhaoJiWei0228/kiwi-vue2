@@ -1,0 +1,24 @@
+.app-flex {
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+  &--left {
+    justify-content: flex-end;
+  }
+
+  &--right {
+    justify-content: flex-start;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--center {
+    align-items: center;
+  }
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
