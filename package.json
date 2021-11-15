@@ -2,7 +2,7 @@
   "name": "kiwi-vue2.0",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "zhaojiwei_v <zhaojiwei_v@didiglobal.com>",
+  "author": "zhaojiwei",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
